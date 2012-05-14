@@ -1,0 +1,21 @@
+Simulacija protokola nivoa veze: Stop-and-Wait
+-----------------------------------------------
+
+Napisati program za simulaciju Stop-and-Wait protokola. Ulazni parametril programa su:
+	- bitska brzina kanala veze,
+	- propagaciono kasnjenje,
+	- vreme obrade,
+	- vremenski period tajmera za retransmisiju,
+	- verovatnoca greske po bitu,
+	- duzina paketa potvrde, d (supervisory packet),
+	- duzina info paketa, (d+i),
+	- izbor raspodele duzine polja podataka info paketa: konstantna/eksponencijalna.
+	
+Predajnik uvek ima na raspolaganju pakete za slanje, pri cemu su paketi numerisani (mod 2) da bi prijemnik mogao da prepozna situaciju kada predajnik vrsi retransmisiju jer je paket potvrde unisten greskom.
+
+Simulacijom odrediti procenu efikasnosti (throughput) protokola i uporediti je sa teoretskom vrednoscu. Osim toga treba prikupiti i sledece podatke:
+	- ukupan broj info paketa,
+	- broj info paketa i paketa potvrde sa greskom,
+	- raspodelu broja pokusaja potrebnih za prenos paketa.
+	
+Za datu verovatnocu greske po bitu i info pakete konstantne duzine, odrediti optimalnu duzinu info paketa (onu za koju se postize maksimalna efikasnost protokola) i proveriti simulacijom tu vrednost.
